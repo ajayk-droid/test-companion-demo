@@ -13,7 +13,7 @@ export class HomePage {
   constructor(page: Page) {
     this.page = page;
     this.addToCartButtons = page.getByText('Add to cart');
-    this.cartBadge = page.locator('.bag_quantity');
+    this.cartBadge = page.locator('.bag__quantity').first();
     this.cartSidebar = page.locator('.float-cart');
     this.checkoutButton = page.getByText('CHECKOUT');
     this.cartItemTitle = page.locator('.float-cart .title');
